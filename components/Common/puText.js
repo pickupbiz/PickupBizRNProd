@@ -15,7 +15,12 @@ export default class puText extends Component {
         <View >
         <TextInput
           style={styles.inputBox}
-          onChangeText={username => this.setState({ username: username })}
+          onChangeText={
+            username => {
+              this.setState({ username: username });
+              this.props.textData(username);
+          }
+        }
           underlineColorAndroid="rgba(0,0,0,0)"
           placeholder={this.props.titlePU}
           returnKeyType="next"
@@ -24,7 +29,7 @@ export default class puText extends Component {
           placeholderTextColor="#ffffff"
           selectionColor="#fff"
           keyboardType={"phone-pad"}
-        />  
+        /> 
       </View>
     );
   }

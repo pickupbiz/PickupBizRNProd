@@ -24,20 +24,28 @@ ios: 'I am IOS',
 android: 'I am Android' 
 });
 
-onPressButton= ()=>{
-  alert('Test this handle click - '+title+'!!')
-}
+let mobile="";
+let email="";
 
+onPressButton= ()=>{
+  alert('Test this handle click - '+title+':User:'+mobile+':email:'+email)
+}
+getMobileData=(data)=>{
+  mobile=data;
+}
+getEmailData=(data)=>{
+  email=data;
+}
 export default class App extends Component {
- 
   render() {
     return (
       <View style={styles.container}>
-      <TextPU titlePU="enter mobile here" />
+      <TextPU titlePU="enter mobile here.." textData={getMobileData}/>
+      <TextPU titlePU="enter email here.." textData={getEmailData}/>
         <ButtonPU titlePU={title} handleOnPress={onPressButton} />
         <TouchableOpacity
                 style={styles.button}
-                onPress={() => alert('Test this about!!')}
+                onPress={() => alert('Test this about!')}
               >
                 <Text style={styles.buttonText}> About</Text>
               </TouchableOpacity>
