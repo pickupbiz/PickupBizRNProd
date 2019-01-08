@@ -13,10 +13,10 @@ import ButtonPU from "./components/Common/puButton";
 import TextPU from "./components/Common/puText";
 
 const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu..',
+  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
     'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu..........',
+    'Shake or press menu button for dev menu',
 });
 
 const title= Platform.select({
@@ -25,7 +25,7 @@ android: 'I am Android'
 });
 
 onPressButton= ()=>{
-  alert('Test this handle click from '+title+'!!')
+  alert('Test this handle click - '+title+'!!')
 }
 
 export default class App extends Component {
@@ -33,7 +33,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <TextPU titlePU="enter mobile number here" />
+      <TextPU titlePU="enter mobile here" />
         <ButtonPU titlePU={title} handleOnPress={onPressButton} />
         <TouchableOpacity
                 style={styles.button}

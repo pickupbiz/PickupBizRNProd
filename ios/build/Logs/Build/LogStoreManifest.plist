@@ -6,6 +6,35 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>975F9BEF-EF30-4D02-A1D2-5BFC08A861F4</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>975F9BEF-EF30-4D02-A1D2-5BFC08A861F4.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>PickupBizRNProd project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PickupBizRNProd</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>568626521.53805804</real>
+			<key>timeStoppedRecording</key>
+			<real>568626523.27137804</real>
+			<key>title</key>
+			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>975F9BEF-EF30-4D02-A1D2-5BFC08A861F4</string>
+		</dict>
 		<key>AAA2677A-BFA3-4540-8B2B-410688B7F594</key>
 		<dict>
 			<key>className</key>
@@ -34,35 +63,6 @@
 			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
 			<key>uniqueIdentifier</key>
 			<string>AAA2677A-BFA3-4540-8B2B-410688B7F594</string>
-		</dict>
-		<key>ACE0BC81-A80C-49D8-A457-0DA7083184F0</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>ACE0BC81-A80C-49D8-A457-0DA7083184F0.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>PickupBizRNProd project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PickupBizRNProd</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>568617303.40750098</real>
-			<key>timeStoppedRecording</key>
-			<real>568617304.79495203</real>
-			<key>title</key>
-			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>ACE0BC81-A80C-49D8-A457-0DA7083184F0</string>
 		</dict>
 	</dict>
 </dict>

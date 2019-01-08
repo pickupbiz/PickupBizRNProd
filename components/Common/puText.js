@@ -3,12 +3,6 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, TextInput, View} from 'react-native';
 
 
-const title= Platform.select({
-ios: 'I am IOS... 1',
-android: 'I am Android..1' 
-});
-
-
 export default class puText extends Component {
     constructor(props) {
         super(props);

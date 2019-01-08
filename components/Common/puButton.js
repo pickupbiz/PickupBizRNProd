@@ -2,13 +2,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 
-
-const title= Platform.select({
-ios: 'I am IOS... 1',
-android: 'I am Android..1' 
-});
-
-
 export default class puButton extends Component {
     
   render() {
