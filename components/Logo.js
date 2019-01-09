@@ -1,17 +1,11 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, View,Text, Image } from "react-native";
 
 export default class Logo extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          style={styles.logoImage}
-          source={{
-            uri:
-              "https://res.cloudinary.com/pickup/image/upload/v1540233800/Pickup/logoPickupBiz.jpg"
-          }}
-        />
+      <Text style={styles.buttonText}>Test</Text>
       </View>
     );
   }
@@ -19,19 +13,25 @@ export default class Logo extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: 150,
+    width: 250,
     height: 70,
     padding: 2,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#fff",
-    marginBottom: 50,
-    borderRadius: 15
+    marginBottom: 10,
+    borderRadius: 25
+  },
+  buttonText: {
+    fontSize: 16,
+    fontWeight: "500",
+    color: "#000080",
+    textAlign: "center"
   },
   logoImage: {
     padding: 2,
-    width: "80%",
-    height: "100%",
+    width: "80",
+    height: "80",
     alignItems: "center",
     justifyContent: "center"
   }

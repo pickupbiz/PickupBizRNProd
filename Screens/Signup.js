@@ -21,7 +21,7 @@ export default class Signup extends React.Component {
             <View style={styles.signupTextCont}>
             <Text style={styles.signupText}>Don't have an account yet?</Text>
             <TouchableOpacity onPress={()=>this.props.navigation.navigate('home')}>
-                <Text style={styles.signupButton}> Signup</Text>
+                <Text style={styles.signupButton}>Signup</Text>
             </TouchableOpacity>
             </View>
       </View>
