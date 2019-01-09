@@ -11,24 +11,20 @@ import {Platform, StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import PickupBizApp from "./PickupBizApp";
 import ButtonPU from "./components/Common/puButton";
 import TextPU from "./components/Common/puText";
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import TextNumPU from "./components/Common/puTextNum";
+import TextPassPU from "./components/Common/puTextPass";
 
 const title= Platform.select({
-ios: 'I am IOS',
-android: 'I am Android' 
+ios: 'IOS',
+android: 'Android' 
 });
 
 let mobile="";
 let email="";
-
+let password="";
 onPressButton= ()=>{
-  alert('Test this handle click - '+title+':User:'+mobile+':email:'+email)
+  alert('Test this handle click - '+title+':User:'+mobile+':email:'
+  +email+':Password:'+password)
 }
 getMobileData=(data)=>{
   mobile=data;
@@ -36,24 +32,18 @@ getMobileData=(data)=>{
 getEmailData=(data)=>{
   email=data;
 }
+getPasswordData=(data)=>{
+  password=data;
+}
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <TextPU titlePU="enter mobile here.." textData={getMobileData}/>
-      <TextPU titlePU="enter email here.." textData={getEmailData}/>
-        <ButtonPU titlePU={title} handleOnPress={onPressButton} />
-        <TouchableOpacity
-                style={styles.button}
-                onPress={() => alert('Test this about!')}
-              >
-                <Text style={styles.buttonText}> About</Text>
-              </TouchableOpacity>
-
-        <Text style={styles.welcome}>{title}</Text>
-        <Text style={styles.instructions}>Test</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-
+      <TextNumPU titlePU="enter mobile here.." keytype={title} textData={getMobileData} name="mobile" nextName="email"/>
+      <TextPU titlePU="enter email here.." keytype={title} textData={getEmailData} name="email"/>
+      <TextPassPU titlePU="enter password here.." keytype={title} textData={getPasswordData} name="password"/>
+      <ButtonPU titlePU={title} handleOnPress={onPressButton} />  
+        
       </View>
     );
   }

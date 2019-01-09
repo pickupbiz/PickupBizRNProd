@@ -7,7 +7,9 @@ export default class puText extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          username: ""
+          username: "",
+          currentControl:this.props.name,
+          nextControl:this.props.nextName
         };
       }  
   render() {
@@ -28,7 +30,12 @@ export default class puText extends Component {
           autoCapitalize="none"
           placeholderTextColor="#ffffff"
           selectionColor="#fff"
-          keyboardType={"phone-pad"}
+          ref=
+          {
+            (this.currentControl)?(
+            input => (this.currentControl = input)
+            ):(null)
+          }
         /> 
       </View>
     );
