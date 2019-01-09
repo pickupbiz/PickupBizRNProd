@@ -2,13 +2,13 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import PickupBizApp from "./PickupBizApp";
-import Registration from "./components/Login/Registeration";
+import Login from "./components/Login/Login";
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <Registration />
+      <Login />
       </View>
     );
   }

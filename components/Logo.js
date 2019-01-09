@@ -14,12 +14,12 @@ export default class Logo extends Component {
 const styles = StyleSheet.create({
   container: {
     width: 250,
-    height: 70,
+    height: 40,
     padding: 2,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#fff",
-    marginBottom: 10,
+    marginBottom: 5,
     borderRadius: 25
   },
   buttonText: {
