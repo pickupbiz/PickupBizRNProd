@@ -7,13 +7,17 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View,TouchableOpacity} from 'react-native';
-import PickupBizApp from "../../PickupBizApp";
+import {Platform, StyleSheet, Text, View,TouchableOpacity,Button} from 'react-native';
+//import PickupBizApp from "../../PickupBizApp";
 import ButtonPU from "../Common/puButton";
 import TextPU from "../Common/puText";
 import TextNumPU from "../Common/puTextNum";
 import TextPassPU from "../Common/puTextPass";
 import Logo from "../Common/Logo";
+import { connect } from "react-redux";
+
+
+// import { login } from "../../actions/authService";
 
 const title= Platform.select({
 ios: 'Login',
@@ -23,10 +27,14 @@ android: 'Login'
 let mobile="";
 let password="";
 onPressButton= ()=>{
+  // this.props.login(mobile.trim(), password.trim());
+  
   alert('Test this handle click - '+title+':User:'+mobile+':Password:'+password)
 }
 onPressButtonSignup= ()=>{
-  alert('Signup:'+mobile+ '--- Password:'+password)
+  //this.props.na
+  //this.props.navigate('home');  
+  
 }
 getMobileData=(data)=>{
   mobile=data;
@@ -34,8 +42,17 @@ getMobileData=(data)=>{
 getPasswordData=(data)=>{
   password=data;
 }
-export default class Registration extends Component {
+export default class Login extends Component {
+  constructor(props) {
+     super(props);
+    
+     }
+  
+   static navigationOptions = {
+    title: 'Welcome'
+  };
   render() {
+    
     return (
       <View style={styles.container}>
       <Logo />
@@ -45,11 +62,30 @@ export default class Registration extends Component {
       <View style={styles.signupTextCont}>
           <Text style={styles.signupText}>Don't have an account yet?</Text>
       </View>
-          <ButtonPU titlePU="Signup" handleOnPress={onPressButtonSignup} />  
+          <ButtonPU titlePU="Signup" handleOnPress={onPressButtonSignup} /> 
       </View>
     );
   }
 }
+
+
+// function mapStateToProps(state) {
+//   return {
+//     isLoading: state.isLoading,
+//     error: state.error
+//   };
+// }
+
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     login: (mobile, password) => dispatch(login(mobile, password))
+//   };
+// };
+
+// export default connect(
+//   mapStateToProps,
+//   mapDispatchToProps
+// )(Login);
 
 const styles = StyleSheet.create({
   container: {

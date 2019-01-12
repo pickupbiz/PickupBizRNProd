@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
-import Logo from "../Component/Logo";
-import LoginForm from "../Component/LoginForm";
+//import Logo from "../Component/Logo";
+//import LoginForm from "../Component/LoginForm";
 
 export default class Login extends React.Component {
   state = {};
@@ -11,7 +11,6 @@ export default class Login extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <LoginForm />
         <View style={styles.signupTextCont}>
           <Text style={styles.signupText}>Don't have an account yet?</Text>
           <TouchableOpacity

@@ -6,6 +6,7 @@ import {Platform, StyleSheet, TextInput, View} from 'react-native';
 export default class puTextNum extends Component {
     constructor(props) {
         super(props);
+      
         this.state = {
           username: "",
           currentControl:this.props.name,

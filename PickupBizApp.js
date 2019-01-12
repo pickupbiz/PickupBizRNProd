@@ -1,46 +1,27 @@
-import React from "react";
-import axios from "axios";
+import React, {Component} from 'react';
+//import axios from "axios";
 import { createStackNavigator } from "react-navigation";
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  Image,
-  TouchableWithoutFeedback,
-  Dimensions,
-  Modal,
-  Navigator
-} from "react-native";
-// import { ImageElements } from "./Component/ImageElements";
-// import { Header } from "./Component/Header";
-// import Home from "./Screens/Home";
-// import PhotoGallary from "./Screens/PhotoGallary";
- import About from "./Screens/About";
-//import LoginForm from "./components/Login/LoginTest";
-// import SignupForm from "./components/Login/Signup";
+import {Platform, StyleSheet, Text, View} from 'react-native';
+import LoginScreen from "./Screens/LoginScreen";
+//import Login from "./Screens/Login";
+//import Signup from "./components/Login/Signup";
+//import Signup from "./Screens/Signup";
+import HomeScreen from "./Screens/HomeScreen";
 
-// import HomeScreen from "./containers/ShoppingCart/HomeScreen";
-// import ElectronicsScreen from "./containers/ShoppingCart/ElectronicsScreen";
-// import BooksScreen from "./containers/ShoppingCart/BooksScreen";
-// import ShoppingCartIcon from "./containers/ShoppingCart/ShoppingCartIcon";
-// import CartScreen from "./containers/ShoppingCart/CartScreen";
-// import CategorysApp from "./components/Categorys/Categorys";
-// import CategorysAppNew from "./components/Categorys/CategorysNew";
-// import UsersApp from "./app/UsersApp";
-
-export default class PickupBiz extends React.Component {
+export class PickupBiz extends Component {
   render() {
-    return <AppStackNavigator />;
+    return (
+      <View >
+        <Text>Test this for login..........................................................</Text>
+        <AppStackNavigator />
+      </View>
+    );
   }
 }
-
-const AppStackNavigator = createStackNavigator(
-  {
-    //login: LoginForm
-    // home: Home
-    // signup: SignupForm,
-     about: About
+//export default AppStackNavigator;
+const AppStackNavigator = createStackNavigator({
+  login: LoginScreen,
+  home: HomeScreen,
     // photogallary: PhotoGallary,
     // MyHome: HomeScreen,
     // Electronics: ElectronicsScreen,
@@ -49,10 +30,24 @@ const AppStackNavigator = createStackNavigator(
     // Categorys: CategorysApp,
     // CategorysNew: CategorysAppNew,
     // UsersApp: UsersApp
-  },
-  {
-    navigationOptions: {
-      headerTitle: "Shopping App"
-        }
   }
+  
+  
+
+  // ,
+  // {
+  //   navigationOptions: {
+  //     headerTitle: "Shopping App"
+  //       }
+  // }
 );
+const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    backgroundColor: "#FFFF00",
+    justifyContent: "center",
+    alignItems: "center",
+    width: 100
+  }
+});
+
