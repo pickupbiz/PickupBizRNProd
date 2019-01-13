@@ -51,7 +51,8 @@ const styles = StyleSheet.create({
     
   },
   textStyle:{
-    width:430
+    width:430,
+    height:1
   }
 });
 
