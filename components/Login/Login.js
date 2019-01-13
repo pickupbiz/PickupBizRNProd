@@ -27,15 +27,9 @@ android: 'Login'
 let mobile="";
 let password="";
 onPressButton= ()=>{
-  // this.props.login(mobile.trim(), password.trim());
-  
   alert('Test this handle click - '+title+':User:'+mobile+':Password:'+password)
 }
-onPressButtonSignup= ()=>{
-  alert("Signup now..")
-  navigate('home');
-  //this.props.navigation.navigate('home');
-}
+
 getMobileData=(data)=>{
   mobile=data;
 }
@@ -46,7 +40,7 @@ getPasswordData=(data)=>{
 handleNavigation=(route)=>{
   //this.props.navigation.navigate('home');
 }
-export default class Login extends Component {
+class Login extends Component {
   constructor(props) {
      super(props);
     
@@ -74,6 +68,23 @@ export default class Login extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    isLoading: state.isLoading,
+    error: state.error
+  };
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    login: (mobile, password) => dispatch(login(mobile, password))
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Login);
 
 // function mapStateToProps(state) {
 //   return {

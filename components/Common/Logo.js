@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#fff",
-    marginBottom: 50,
+    marginTop: 10,
+    marginBottom: 15,
     borderRadius: 15
   },
   logoImage: {
