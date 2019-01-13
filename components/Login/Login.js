@@ -32,15 +32,19 @@ onPressButton= ()=>{
   alert('Test this handle click - '+title+':User:'+mobile+':Password:'+password)
 }
 onPressButtonSignup= ()=>{
-  //this.props.na
-  //this.props.navigate('home');  
-  
+  alert("Signup now..")
+  navigate('home');
+  //this.props.navigation.navigate('home');
 }
 getMobileData=(data)=>{
   mobile=data;
 }
 getPasswordData=(data)=>{
   password=data;
+}
+
+handleNavigation=(route)=>{
+  //this.props.navigation.navigate('home');
 }
 export default class Login extends Component {
   constructor(props) {
@@ -52,7 +56,7 @@ export default class Login extends Component {
     title: 'Welcome'
   };
   render() {
-    
+    const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
       <Logo />
@@ -62,7 +66,9 @@ export default class Login extends Component {
       <View style={styles.signupTextCont}>
           <Text style={styles.signupText}>Don't have an account yet?</Text>
       </View>
-          <ButtonPU titlePU="Signup" handleOnPress={onPressButtonSignup} /> 
+          <ButtonPU titlePU="Signup" handleOnPress={() =>
+            navigate('home')
+          } /> 
       </View>
     );
   }

@@ -35,7 +35,7 @@ export default class LoginScreen extends Component {
             navigate('home')
           }
         />
-          <Login nav={navigate} />
+          <Login navClick={handleNavigation} />
       </View>
     );
   }

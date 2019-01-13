@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>7CB37488-2050-49DB-9C90-D0214CBC5F0F</key>
+		<key>94D1CD8A-B37A-44B9-B076-241B30DCAC20</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7CB37488-2050-49DB-9C90-D0214CBC5F0F.xcactivitylog</string>
+			<string>94D1CD8A-B37A-44B9-B076-241B30DCAC20.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,13 +27,13 @@
 			<key>signature</key>
 			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>568798902.57823801</real>
+			<real>569047637.14251602</real>
 			<key>timeStoppedRecording</key>
-			<real>568798904.22587502</real>
+			<real>569047638.77248204</real>
 			<key>title</key>
 			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>7CB37488-2050-49DB-9C90-D0214CBC5F0F</string>
+			<string>94D1CD8A-B37A-44B9-B076-241B30DCAC20</string>
 		</dict>
 	</dict>
 </dict>
