@@ -15,6 +15,7 @@ import TextNumPU from "../Common/puTextNum";
 import TextPassPU from "../Common/puTextPass";
 import Logo from "../Common/Logo";
 import { connect } from "react-redux";
+import { login } from "../../actions/authService";
 
 
 // import { login } from "../../actions/authService";
@@ -27,7 +28,10 @@ android: 'Login'
 let mobile="";
 let password="";
 onPressButton= ()=>{
-  alert('Test this handle click - '+title+':User:'+mobile+':Password:'+password)
+  this.props.navigation.navigate("Categorys");
+  //alert('Test this handle click - '+title+':User:'+mobile+':Password:'+password)
+  //login(mobile.trim(), password.trim());
+  //this.props.navigation.navigate("Categorys");
 }
 
 getMobileData=(data)=>{
@@ -56,7 +60,8 @@ class Login extends Component {
       <Logo />
       <TextNumPU titlePU="enter mobile" keytype={title} textData={getMobileData} name="mobile" nextName="email"/>
       <TextPassPU titlePU="enter password" keytype={title} textData={getPasswordData} name="password"/>
-      <ButtonPU titlePU={title} handleOnPress={onPressButton} />  
+      <ButtonPU titlePU={title} handleOnPress={() =>
+            navigate('categorys')} />  
       <View style={styles.signupTextCont}>
           <Text style={styles.signupText}>Don't have an account yet?</Text>
       </View>

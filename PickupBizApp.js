@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import { createStackNavigator } from "react-navigation";
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import LoginScreen from "./components/Login/Login";
+import CategorysApp from "./components/Categorys/Categorys";
+
 //import LoginScreen from "./Screens/LoginScreen";
 //import Login from "./Screens/Login";
 //import Signup from "./components/Login/Signup";
@@ -28,7 +30,7 @@ const AppStackNavigator = createStackNavigator({
     // Electronics: ElectronicsScreen,
     // Books: BooksScreen,
     // Cart: CartScreen,
-    // Categorys: CategorysApp,
+  categorys: CategorysApp,
     // CategorysNew: CategorysAppNew,
     // UsersApp: UsersApp
   }

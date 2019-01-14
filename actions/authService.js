@@ -14,6 +14,7 @@ export async function loginAsync(mobile, password) {
 
 export function login(mobile, password) {
   return (dispatch, getState) => {
+    alert('login-authservice');
     loginAsync(mobile, password)
       .then(response => {
         if (response) {

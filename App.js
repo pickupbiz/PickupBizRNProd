@@ -9,9 +9,9 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-      <View style={styles.container}>
-      <PickupBiz />
-      </View>
+        <View style={styles.container}>
+        <PickupBiz />
+        </View>
       </Provider>
     );
   }

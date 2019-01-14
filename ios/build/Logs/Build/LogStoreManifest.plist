@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>375932AA-F5BE-4DA5-9DB9-80CD9D79D7E6</key>
+		<key>62DD06E4-C576-447E-A0C8-6854EA25CD06</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>375932AA-F5BE-4DA5-9DB9-80CD9D79D7E6.xcactivitylog</string>
+			<string>62DD06E4-C576-447E-A0C8-6854EA25CD06.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,15 +27,15 @@
 			<key>signature</key>
 			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>569057064.58030605</real>
+			<real>569101997.866467</real>
 			<key>timeStoppedRecording</key>
-			<real>569057066.14493799</real>
+			<real>569101999.53305399</real>
 			<key>title</key>
 			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>375932AA-F5BE-4DA5-9DB9-80CD9D79D7E6</string>
+			<string>62DD06E4-C576-447E-A0C8-6854EA25CD06</string>
 		</dict>
-		<key>A0A02FB1-C74D-4D5B-B5B6-D9AAFAE75C42</key>
+		<key>C941B661-B4D9-4F62-9800-2F9CCD6853FF</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -44,7 +44,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A0A02FB1-C74D-4D5B-B5B6-D9AAFAE75C42.xcactivitylog</string>
+			<string>C941B661-B4D9-4F62-9800-2F9CCD6853FF.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,13 +56,13 @@
 			<key>signature</key>
 			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>569066471.728019</real>
+			<real>569117265.38832104</real>
 			<key>timeStoppedRecording</key>
-			<real>569066473.36717105</real>
+			<real>569117267.00414097</real>
 			<key>title</key>
 			<string>Building project PickupBizRNProd with scheme PickupBizRNProd and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>A0A02FB1-C74D-4D5B-B5B6-D9AAFAE75C42</string>
+			<string>C941B661-B4D9-4F62-9800-2F9CCD6853FF</string>
 		</dict>
 	</dict>
 </dict>
